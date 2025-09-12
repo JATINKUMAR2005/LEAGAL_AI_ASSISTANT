@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette to black and brown theme */
+  --background: #f5f5f5; /* Light background for the overall layout */
+  --foreground: #4b3c2a; /* Primary dark brown for text */
+  --card: #ffffff; /* White for card background */
+  --card-foreground: #4b3c2a; /* Dark brown text on cards */
+  --popover: #8b5a2b; /* Medium brown for popovers */
+  --popover-foreground: #ffffff; /* White text in popovers */
+  --primary: #4b3c2a; /* Primary color for buttons and highlights */
+  --primary-foreground: #ffffff; /* White text on primary buttons */
+  --secondary: #c79b7a; /* Accent color for secondary actions */
+  --secondary-foreground: #4b3c2a; /* Dark brown text on secondary buttons */
+  --muted: #f5f5f5; /* Muted background for less important elements */
+  --muted-foreground: #4b3c2a; /* Dark brown text for muted elements */
+  --accent: #c79b7a; /* Accent color for highlights */
+  --accent-foreground: #4b3c2a; /* Dark brown text on accent elements */
+  --destructive: #be123c; /* Red for destructive actions */
+  --destructive-foreground: #ffffff; /* White text for destructive actions */
+  --border: #8b5a2b; /* Medium brown for borders */
+  --input: #ffffff; /* White for input fields */
+  --ring: #c79b7a; /* Accent color for focus rings */
+  --chart-1: #4b3c2a; /* Dark brown for charts */
+  --chart-2: #c79b7a; /* Accent color for chart elements */
+  --chart-3: #8b5a2b; /* Medium brown for additional chart elements */
+  --chart-4: #f5f5f5; /* Light gray for chart backgrounds */
+  --chart-5: #000000; /* Black for chart outlines */
+  --radius: 0.5rem; /* Corner rounding for cards */
+  --sidebar: #4b3c2a; /* Sidebar background */
+  --sidebar-foreground: #ffffff; /* Sidebar text color */
+  --sidebar-primary: #8b5a2b; /* Primary color in sidebar */
+  --sidebar-primary-foreground: #ffffff; /* Text color for primary sidebar elements */
+  --sidebar-accent: #c79b7a; /* Accent color in sidebar */
+  --sidebar-accent-foreground: #4b3c2a; /* Text color for accent sidebar elements */
+  --sidebar-border: #8b5a2b; /* Border color in sidebar */
+  --sidebar-ring: #c79b7a; /* Focus ring color in sidebar */
+}
+
+.dark {
+  /* Updated dark mode colors for black and brown theme */
+  --background: #000000; /* Pure black background */
+  --foreground: #f5f5f5; /* Light text */
+  --card: #1a1a1a; /* Dark card background */
+  --card-foreground: #f5f5f5; /* Light text on cards */
+  --popover: #1a1a1a; /* Dark popover background */
+  --popover-foreground: #f5f5f5; /* Light text in popovers */
+  --primary: #c79b7a; /* Accent brown as primary in dark mode */
+  --primary-foreground: #000000; /* Black text on primary buttons */
+  --secondary: #8b5a2b; /* Medium brown for secondary */
+  --secondary-foreground: #f5f5f5; /* Light text on secondary */
+  --muted: #1a1a1a; /* Dark muted background */
+  --muted-foreground: #c79b7a; /* Brown text for muted elements */
+  --accent: #c79b7a; /* Accent color */
+  --accent-foreground: #000000; /* Black text on accent */
+  --destructive: #ef4444; /* Brighter red for dark mode */
+  --destructive-foreground: #f5f5f5; /* Light text for destructive */
+  --border: #8b5a2b; /* Medium brown borders */
+  --input: #1a1a1a; /* Dark input background */
+  --ring: #c79b7a; /* Accent ring color */
+  --chart-1: #c79b7a;
+  --chart-2: #8b5a2b;
+  --chart-3: #4b3c2a;
+  --chart-4: #1a1a1a;
+  --chart-5: #f5f5f5;
+  --sidebar: #000000; /* Black sidebar */
+  --sidebar-foreground: #f5f5f5; /* Light sidebar text */
+  --sidebar-primary: #c79b7a; /* Brown primary in sidebar */
+  --sidebar-primary-foreground: #000000; /* Black text on primary */
+  --sidebar-accent: #8b5a2b; /* Medium brown accent */
+  --sidebar-accent-foreground: #f5f5f5; /* Light text on accent */
+  --sidebar-border: #8b5a2b; /* Brown borders */
+  --sidebar-ring: #c79b7a; /* Brown focus rings */
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations for AI elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 3s ease-in-out infinite 1.5s;
+}
