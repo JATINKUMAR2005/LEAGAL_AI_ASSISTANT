@@ -1,13 +1,4 @@
 # 🏛️ Legal AI Assistant
-
-*AI-Powered Legal Case Management & Consultation Platform*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/HO8dZHiobZe)
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Supabase](https://img.shields.io/badge/Supabase-Database-green?style=for-the-badge&logo=supabase)](https://supabase.com/)
-
 ## 📋 Overview
 
 The Legal AI Assistant is a sophisticated web application designed to streamline legal case management and provide 24/7 AI-powered legal consultation for departmental use. Built with modern web technologies, it offers secure, confidential, and compliant legal support with an intuitive user interface.
