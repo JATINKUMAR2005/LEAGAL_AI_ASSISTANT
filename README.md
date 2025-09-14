@@ -1,30 +1,207 @@
-# geminiapichatbotmain
+# 🏛️ Legal AI Assistant
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+*AI-Powered Legal Case Management & Consultation Platform*
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/HO8dZHiobZe)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Database-green?style=for-the-badge&logo=supabase)](https://supabase.com/)
 
-## Overview
+## 📋 Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+The Legal AI Assistant is a sophisticated web application designed to streamline legal case management and provide 24/7 AI-powered legal consultation for departmental use. Built with modern web technologies, it offers secure, confidential, and compliant legal support with an intuitive user interface.
 
-## Deployment
+### ✨ Key Features
 
-Your project is live at:
+- 🤖 **AI-Powered Consultation** - Get instant legal guidance using advanced AI models
+- 📊 **Case Database Management** - Comprehensive case tracking and management system
+- 🔐 **Secure Authentication** - User registration and login with Supabase Auth
+- 📱 **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- 🎨 **Modern UI/UX** - Clean, professional interface with dark/light mode support
+- ⚡ **Real-time Chat** - Interactive AI chat interface for legal consultations
+- 🛡️ **Data Security** - Enterprise-grade security and privacy protection
+- 📈 **Analytics** - Built-in analytics for usage tracking and insights
 
-**[https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain](https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain)**
+## 🚀 Live Demo
 
-## Build your app
+**Production:** [https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain](https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain)
 
-Continue building your app on:
+**Development:** [https://v0.app/chat/projects/HO8dZHiobZe](https://v0.app/chat/projects/HO8dZHiobZe)
 
-**[https://v0.app/chat/projects/HO8dZHiobZe](https://v0.app/chat/projects/HO8dZHiobZe)**
+## 🛠️ Technology Stack
 
-## How It Works
+### Frontend
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **UI Components:** Radix UI + shadcn/ui
+- **Icons:** Lucide React
+- **Animations:** Tailwind CSS Animations
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### Backend & Database
+- **Database:** Supabase (PostgreSQL)
+- **Authentication:** Supabase Auth
+- **API Routes:** Next.js API Routes
+- **AI Integration:** Groq AI SDK
+
+### Development Tools
+- **Package Manager:** npm
+- **Linting:** ESLint
+- **Type Checking:** TypeScript
+- **Deployment:** Vercel
+
+## 📁 Project Structure
+
+\`\`\`
+├── app/                    # Next.js App Router
+│   ├── api/               # API routes
+│   │   ├── chat/          # Chat API endpoints
+│   │   └── contact/       # Contact form API
+│   ├── auth/              # Authentication pages
+│   │   ├── login/         # Login page
+│   │   ├── sign-up/       # Registration page
+│   │   └── sign-up-success/ # Success page
+│   ├── chat/              # Chat interface
+│   ├── contact/           # Contact page
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Homepage
+├── components/            # Reusable components
+│   ├── ui/               # UI components (shadcn/ui)
+│   ├── chat-demo.tsx     # Chat demonstration
+│   ├── features.tsx      # Features section
+│   ├── footer.tsx        # Footer component
+│   ├── header.tsx        # Header navigation
+│   ├── hero.tsx          # Hero section
+│   └── testimonials.tsx  # Testimonials section
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+└── static/               # Static assets
+    └── images/           # Image assets
+\`\`\`
+
+## 🔧 Installation & Setup
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Supabase account
+- Groq API key
+
+### 1. Clone the Repository
+\`\`\`bash
+git clone https://github.com/your-username/legal-ai-assistant.git
+cd legal-ai-assistant
+\`\`\`
+
+### 2. Install Dependencies
+\`\`\`bash
+npm install
+\`\`\`
+
+### 3. Environment Variables
+Create a `.env.local` file in the root directory:
+
+\`\`\`env
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL=http://localhost:3000
+
+# Database Configuration (Auto-generated by Supabase)
+POSTGRES_URL=your_postgres_url
+POSTGRES_PRISMA_URL=your_postgres_prisma_url
+POSTGRES_URL_NON_POOLING=your_postgres_url_non_pooling
+POSTGRES_USER=your_postgres_user
+POSTGRES_HOST=your_postgres_host
+POSTGRES_PASSWORD=your_postgres_password
+POSTGRES_DATABASE=your_postgres_database
+
+# AI Configuration
+GROQ_API_KEY=your_groq_api_key
+
+# Email Configuration (Optional)
+RESEND_API_KEY=your_resend_api_key
+\`\`\`
+
+### 4. Database Setup
+The application uses Supabase for database management. The required tables and authentication setup are handled automatically through the Supabase integration.
+
+### 5. Run Development Server
+\`\`\`bash
+npm run dev
+\`\`\`
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🎯 Usage
+
+### For End Users
+1. **Registration:** Create an account using the sign-up page
+2. **Login:** Access your account through the login page
+3. **Chat Interface:** Start a legal consultation through the AI chat
+4. **Case Management:** View and manage legal cases through the database
+5. **Contact:** Reach out to the legal team for additional support
+
+### For Administrators
+1. **User Management:** Monitor user registrations and activity
+2. **Case Oversight:** Review and manage all legal cases
+3. **AI Monitoring:** Track AI consultation quality and usage
+4. **System Analytics:** Access usage statistics and performance metrics
+
+## 🔐 Security Features
+
+- **Authentication:** Secure user authentication with Supabase Auth
+- **Data Encryption:** All sensitive data is encrypted in transit and at rest
+- **Access Control:** Role-based access control for different user types
+- **Privacy Compliance:** GDPR and legal industry compliance standards
+- **Audit Logging:** Comprehensive logging for security and compliance
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Configure environment variables in Vercel dashboard
+3. Deploy automatically on every push to main branch
+
+### Manual Deployment
+\`\`\`bash
+npm run build
+npm start
+\`\`\`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- **Documentation:** [Project Wiki](https://github.com/your-username/legal-ai-assistant/wiki)
+- **Issues:** [GitHub Issues](https://github.com/your-username/legal-ai-assistant/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/your-username/legal-ai-assistant/discussions)
+- **Email:** support@legalai-assistant.com
+
+## 🙏 Acknowledgments
+
+- Built with [v0.app](https://v0.app) - AI-powered development platform
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Database and authentication by [Supabase](https://supabase.com/)
+- AI capabilities powered by [Groq](https://groq.com/)
+- Deployed on [Vercel](https://vercel.com/)
+
+---
+
+<div align="center">
+  <p>Made with ❤️ for the legal community</p>
+  <p>© 2024 Legal AI Assistant. All rights reserved.</p>
+</div>
