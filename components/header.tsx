@@ -18,7 +18,7 @@ export function Header() {
               <Scale className="w-8 h-8 text-primary" />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
             </div>
-            <span className="text-xl font-bold text-foreground">LegalAI Assistant</span>
+            <span className="text-xl font-bold text-foreground">JUSTIBOT</span>
           </Link>
 
           {/* Desktop Navigation */}

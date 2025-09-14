@@ -57,7 +57,7 @@ export function Footer() {
                 <Scale className="w-8 h-8" />
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
               </div>
-              <span className="text-2xl font-bold">LegalAI Assistant</span>
+              <span className="text-2xl font-bold">JUSTIBOT</span>
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md text-pretty">
               Streamline your legal department operations with our specialized AI assistant. Get instant access to case

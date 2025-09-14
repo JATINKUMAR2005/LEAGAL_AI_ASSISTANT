@@ -75,7 +75,7 @@ export function Features() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-balance mb-4">Why Choose Our Legal AI Assistant?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-balance mb-4">Why Choose Our JUSTIBOT?</h2>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
             Discover how our specialized AI transforms legal department operations and case management efficiency.
           </p>

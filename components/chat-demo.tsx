@@ -133,7 +133,7 @@ export function ChatDemo() {
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary-foreground/20 rounded-full flex items-center justify-center">
                     <Scale className="w-3 h-3 sm:w-4 sm:h-4" />
                   </div>
-                  <span className="text-sm sm:text-base lg:text-lg">Legal AI Assistant</span>
+                  <span className="text-sm sm:text-base lg:text-lg">JUSTIBOT</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
