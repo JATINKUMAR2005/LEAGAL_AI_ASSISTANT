@@ -172,7 +172,7 @@ export default function ChatPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-accent/5 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-accent/5 flex flex-col relative overflow-hidden pt-16">
       <Header />
 
       <div className="flex flex-1 relative overflow-hidden">
