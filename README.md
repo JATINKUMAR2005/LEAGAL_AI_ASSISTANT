@@ -1,6 +1,6 @@
 # 🏛️ Legal AI Assistant
 
-**FOR DEMO:**
+**FOR DEMO:**ai-court-jk.vercel.app
 
 ## 📋 Overview
 
