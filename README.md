@@ -1,5 +1,7 @@
 # 🏛️ Legal AI Assistant
 
+**FOR DEMO:**
+
 ## 📋 Overview
 
 The Legal AI Assistant is a sophisticated web application designed to streamline legal case management and provide 24/7 AI-powered legal consultation for departmental use. Built with modern web technologies, it offers secure, confidential, and compliant legal support with an intuitive user interface.
@@ -16,7 +18,6 @@ The Legal AI Assistant is a sophisticated web application designed to streamline
 - 📈 **Analytics** - Built-in analytics for usage tracking and insights
 
 ## 🚀 Live Demo
-**FOR DEMO:**
 
 **Production:** [https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain](https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain)
 
