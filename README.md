@@ -15,7 +15,8 @@ The Legal AI Assistant is a sophisticated web application designed to streamline
 - 🛡️ **Data Security** - Enterprise-grade security and privacy protection
 - 📈 **Analytics** - Built-in analytics for usage tracking and insights
 
-## 🚀 Live Demo : ai-court-jk.vercel.app
+## 🚀 Live Demo
+**FOR DEMO:**
 
 **Production:** [https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain](https://vercel.com/luciferxtrgaming-5461s-projects/v0-geminiapichatbotmain)
 
